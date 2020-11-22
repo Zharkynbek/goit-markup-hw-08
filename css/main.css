@@ -801,7 +801,7 @@ summary {
 
 .checkbox:checked + .galochka {
   background-color: #2196f3;
-  background-image: url("/images/galochka.svg");
+  background-image: url("../../images/galochka.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: border-box;
@@ -810,7 +810,7 @@ summary {
 
 .checkbox:checked:focus + .galochka {
   background-color: #2196f3;
-  background-image: url("/images/galochka.svg");
+  background-image: url("../../images/galochka.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: border-box;
@@ -1492,6 +1492,24 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .container {
+    width: 1140px;
+  }
 }
 
 .portfolio-content {
