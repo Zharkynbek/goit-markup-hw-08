@@ -1,0 +1,305 @@
+.primery-section {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../images/overlay.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .primery-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 200px;
+  }
+}
+
+.order-type {
+  text-align: center;
+  margin-top: 30px;
+
+  .order {
+    color: #fff;
+    background-color: $logo-color;
+    padding: 10px 32px;
+    border-radius: 5px;
+    border: transparent;
+    margin-bottom: 214px;
+    cursor: pointer;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition-property: $logo-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 581px;
+  width: 528px;
+  border-radius: 4px;
+  background-color: #fff;
+
+  .modal-container {
+    width: 528px;
+    padding-left: 40px;
+    padding-right: 40px;
+    h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      line-height: 23px;
+      letter-spacing: 0.03em;
+      color: #212121;
+    }
+  }
+}
+
+.iks {
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: 8px;
+  margin-top: 8px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $logo-color;
+  }
+}
+
+.form {
+  width: 448px;
+
+  .form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.666;
+    letter-spacing: 0.01em;
+    color: #757575;
+
+    &:hover > .modal-icons,
+    &:focus > .modal-icons {
+      stroke: $logo-color;
+      fill: $logo-color;
+    }
+
+    &:hover > .form-box,
+    &:focus > .form-box {
+      border: 1px solid $logo-color;
+    }
+  }
+}
+
+.form-box {
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 33px;
+  outline: none;
+  color: #757575;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border: 1px solid $logo-color;
+  }
+
+  &:focus + .modal-icons {
+    fill: $logo-color;
+  }
+}
+
+.form-comment {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.666;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+  color: #757575;
+
+  .form-box-text {
+    cursor: pointer;
+    padding: 12px 16px;
+    height: 120px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.666;
+    outline: transparent;
+    letter-spacing: 0.01em;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+
+    &:focus {
+      border: 1px solid $logo-color;
+    }
+  }
+
+  &:hover > .form-box-text,
+  &:focus > .form-box-text {
+    border: 1px solid $logo-color;
+  }
+}
+
+.send-modal {
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  display: block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  color: #ffffff;
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: $logo-color;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+}
+
+.contract {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+
+  .contract-link {
+    text-decoration: underline;
+    color: $logo-color;
+
+    &:focus {
+      outline-color: $logo-color;
+    }
+  }
+
+  .contract-box {
+    display: flex;
+    align-items: center;
+    margin-left: 9px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .galochka {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border-radius: 4px;
+    margin-right: 7px;
+    border: 2px solid #212121;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .weg {
+    opacity: 0;
+  }
+}
+
+.modal-icons {
+  position: absolute;
+  display: inline-block;
+  top: 66%;
+  left: 15px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.checkbox {
+  appearance: none;
+  position: absolute;
+
+  &:checked .galochka:focus {
+    border: 1px solid $logo-color;
+  }
+
+  &:checked + .galochka {
+    background-color: $logo-color;
+    background-image: url("../../images/galochka.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+  }
+
+  &:checked:focus + .galochka {
+    background-color: $logo-color;
+    background-image: url("../../images/galochka.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+  }
+
+  &:focus + .galochka {
+    border: 2px solid $logo-color;
+  }
+
+  &:checked + .galochka {
+    border: 2px solid$logo-color;
+  }
+}

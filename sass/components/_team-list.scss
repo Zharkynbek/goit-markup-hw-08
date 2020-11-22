@@ -1,0 +1,95 @@
+.tretii-section {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .tretii-list {
+    @extend %list;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+}
+
+.social {
+  @extend %list;
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: center;
+
+  li {
+    margin-top: 16px;
+    margin-bottom: 0;
+    border-radius: 50%;
+  }
+  .name-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+  }
+
+  & li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.icons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  transition-property: var(--logo-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    outline: none;
+    fill: #ffffff;
+    background-color: $logo-color;
+  }
+}
+
+.team-item {
+  margin-right: 30px;
+  background-color: #fff;
+  padding-bottom: 30px;
+
+  .name-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .name-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 1.187;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

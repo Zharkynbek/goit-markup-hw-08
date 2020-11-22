@@ -1,0 +1,87 @@
+@import "./utils/variables";
+@import "./base/normalize";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./components/page-header";
+@import "./components/banner";
+@import "./components/quality-list";
+@import "./components/employment";
+@import "./components/team-list";
+@import "./components/customer";
+@import "./components/footer";
+@import "./components/radio-btn";
+@import "./components/select-picters";
+
+body {
+  font-family: Roboto;
+  margin: 0;
+}
+
+.skryt {
+  display: none;
+}
+
+.portfolio {
+  border-bottom: 1px solid #ececec;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1140px) {
+    width: 1140px;
+  }
+}
+
+.portfolio-content {
+  background-color: #ffffff;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+footer {
+  background-color: #2f303a;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+address {
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Roboto;
+}
+
+p,
+h2,
+h3 {
+  color: $primery-title-color;
+}
+
+a {
+  font-family: Roboto;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

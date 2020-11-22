@@ -1,0 +1,166 @@
+.flexbox {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-box {
+  align-items: center;
+  .street {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.714;
+    padding-top: 20px;
+    padding-bottom: 0;
+    border-bottom: 0px;
+    margin-right: 70px;
+  }
+
+  .under-studio {
+    color: #fff;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+  }
+}
+
+.social-link {
+  margin: 0;
+  padding: 0;
+
+  p {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.145;
+    color: #fff;
+  }
+}
+
+.social-footer {
+  @extend %list;
+  display: flex;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-icons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: $logo-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social-icon {
+    fill: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $logo-color;
+  }
+}
+
+.subscribe {
+  margin-left: auto;
+
+  .subscribe-text {
+    margin-left: 93px;
+    margin-bottom: 20;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.145;
+    color: #fff;
+  }
+}
+
+.subscribe-footer {
+  margin-top: 20px;
+  margin-left: 93px;
+
+  .subscribe-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.email {
+  width: 358px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.subscribe-btn {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: $logo-color;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  margin-left: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+
+  &::after {
+    content: "";
+    background-image: url(/images/telegram.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.link-info {
+  @extend %list;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  .link {
+    color: $primery-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.714;
+
+    &:hover,
+    &:focus {
+      color: $logo-color;
+    }
+  }
+
+  li {
+    padding-top: 9px;
+  }
+}
