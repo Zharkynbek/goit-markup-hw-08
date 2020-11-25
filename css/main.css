@@ -839,8 +839,22 @@ summary {
   padding: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .second-section .second-list {
+    display: block;
+    width: 100%;
+  }
+}
+
 .second-section .second-list li {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .second-section .second-list li {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 .second-section .second-list h3 {
@@ -1487,7 +1501,6 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
