@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TEST</title>
+    <title>goit-markup-hw-08</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
         integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
         crossorigin="anonymous" />
@@ -18,14 +18,15 @@
 
     <header class="header portfolio">
         <div class="container">
-    
+
             <div class="nav">
                 <a href="" class="logotip"><span class="web">Web</span><span class="high-studio">Studio</span></a>
                 <nav class="main-nav">
-    
+
                     <ul class="site-navi list">
-                        <li class="site-item"><a class="site-link" href="./index.html">Студия</a></li>
-                        <li class="site-item"><a class="site-link" href="./portfolio.html"><span class="second-navi">Портфолио</span></a></li>
+                        <li class="site-item"><a class="site-link" href="./index.html"><span class="first-navi">Студия</span></a>
+                        </li>
+                        <li class="site-item"><a class="site-link" href="./portfolio.html">Портфолио</a></li>
                         <li class="site-item"><a class="site-link" href="">Контакты</a></li>
                     </ul>
                     <button type="button" class="menu-button" aria-expanded="false" aria-controls="mobile-menu"
@@ -38,14 +39,14 @@
                 </nav>
                 <ul class="link-type list">
                     <li class="item-info">
-    
+
                         <a class="info-link" href="mailto:info@devstudio.com">
                             <svg class="link-icon" width="16" height="12">
                                 <use href="./images/sprite.svg#konvert"></use>
                             </svg>info@devstudio.com</a></li>
-    
-    
-    
+
+
+
                     <li class="item-info">
                         <a class="info-link" href="tel:+380961111111">
                             <svg class="link-icon" width="10" height="16">
@@ -55,24 +56,24 @@
             </div>
         </div>
     </header>
-    
+
     <div class="mobile-menu" id="mobile-menu" data-menu>
         <ul class="mobile-site-navi list">
-            <li class="mobile-site-item"><a class="mobile-site-link" href="./index.html">Студия</a></li>
-            <li class="mobile-site-item"><a class="mobile-site-link current" href="./portfolio.html">Портфолио</a></li>
+            <li class="mobile-site-item"><a class="mobile-site-link current" href="./index.html">Студия</a></li>
+            <li class="mobile-site-item"><a class="mobile-site-link" href="./portfolio.html">Портфолио</a></li>
             <li class="mobile-site-item"><a class="mobile-site-link" href="">Контакты</a></li>
         </ul>
-    
+
         <ul class="mobile-link-type list">
             <li class="mobile-item-info">
-    
+
                 <a class="mobile-info-link" href="mailto:info@devstudio.com">
                     <svg class="link-icon" width="16" height="12">
                         <use href="./images/sprite.svg#konvert"></use>
                     </svg>info@devstudio.com</a></li>
-    
-    
-    
+
+
+
             <li class="mobile-item-info">
                 <a class="mobile-info-link" href="tel:+380961111111">
                     <svg class="link-icon" width="10" height="16">
@@ -101,7 +102,7 @@
         
                             <a href="" class="main-foto-text">
                                 <div class="thumb">
-        <picture>
+        <picture class="photo">
             <img src="./images/port/img.jpg" alt="фотки на ноутбуке">
             <source
                 srcset="./images/port/portfolio/mobile/techno-480.jpeg 1x, ./images/port/portfolio/mobile/techno-480@2x.jpeg 2x"
@@ -133,8 +134,8 @@
                         <li class="foto-item"><a href="" class="main-foto-text">
                                 <div class="thumb">
 
-    <picture>
-        <img src="./images/port/img(1).jpg" alt="это баскетболисты" width="370">
+    <picture class="photo">
+        <img src="./images/port/img(1).jpg" alt="это баскетболисты">
         <source
             srcset="./images/port/portfolio/mobile/ball-480.jpeg 1x, ./images/port/portfolio/mobile/ball-480@2x.jpeg 2x"
             media="(max-width: 767px)">
@@ -162,8 +163,8 @@
                         <li class="foto-item"><a href="" class="main-foto-text">
                                 <div class="thumb">
 
-    <picture>
-        <img src="./images/port/img(2).jpg" alt="логотип ресторана" width="370">
+    <picture class="photo">
+        <img src="./images/port/img(2).jpg" alt="логотип ресторана">
         <source srcset="./images/port/portfolio/mobile/sea-food-480.jpeg 1x, ./images/port/portfolio/mobile/sea-food-480@2x.jpeg 2x"
             media="(max-width: 767px)">
     
@@ -190,8 +191,8 @@
                         <li class="foto-item"><a href="" class="main-foto-text">
                                 <div class="thumb">
 
-    <picture>
-        <img src="./images/port/img(3).jpg" alt="наушники" width="370">
+    <picture class="photo">
+        <img src="./images/port/img(3).jpg" alt="наушники">
         <source
             srcset="./images/port/portfolio/mobile/prime-480.jpeg 1x, ./images/port/portfolio/mobile/prime-480@2x.jpeg 2x"
             media="(max-width: 767px)">
@@ -220,8 +221,8 @@
                         <li class="foto-item"><a href="" class="main-foto-text">
                                 <div class="thumb">
 
-    <picture>
-        <img src="./images/port/img(4).jpg" alt="коробки" width="370">
+    <picture class="photo">
+        <img src="./images/port/img(4).jpg" alt="коробки">
         <source
             srcset="./images/port/portfolio/mobile/box-480.jpeg 1x, ./images/port/portfolio/mobile/box-480@2x.jpeg 2x"
             media="(max-width: 767px)">
@@ -249,8 +250,8 @@
                         <li class="foto-item"><a href="" class="main-foto-text">
                                 <div class="thumb">
 
-    <picture>
-        <img src="./images/port/img(5).jpg" alt="компьютр" width="370">
+    <picture class="photo">
+        <img src="./images/port/img(5).jpg" alt="компьютр">
         <source srcset="./images/port/portfolio/mobile/monitor-480.jpeg 1x, ./images/port/portfolio/mobile/monitor-480@2x.jpeg 2x"
             media="(max-width: 767px)">
     
@@ -276,8 +277,8 @@
                         <li class="foto-item"><a href="" class="main-foto-text">
                                 <div class="thumb">
 
-    <picture>
-        <img src="./images/port/img(6).jpg" alt="открытая книга" width="370">
+    <picture class="photo">
+        <img src="./images/port/img(6).jpg" alt="открытая книга">
         <source
             srcset="./images/port/portfolio/mobile/limited-480.jpeg 1x, ./images/port/portfolio/mobile/limited-480@2x.jpeg 2x"
             media="(max-width: 767px)">
@@ -305,8 +306,8 @@
                         <li class="foto-item"><a href="" class="main-foto-text">
                                 <div class="thumb">
 
-    <picture>
-        <img src="./images/port/img(7).jpg" alt="бумажная этикетка" width="370">
+    <picture class="photo">
+        <img src="./images/port/img(7).jpg" alt="бумажная этикетка">
         <source
             srcset="./images/port/portfolio/mobile/lab-480.jpeg 1x, ./images/port/portfolio/mobile/lab-480@2x.jpeg 2x"
             media="(max-width: 767px)">
@@ -334,8 +335,8 @@
                         <li class="foto-item"><a href="" class="main-foto-text">
                                 <div class="thumb">
 
-    <picture>
-        <img src="./images/port/img(8).jpg" alt="рука на клавиатуре" width="370">
+    <picture class="photo">
+        <img src="./images/port/img(8).jpg" alt="рука на клавиатуре" >
         <source srcset="./images/port/portfolio/mobile/grow-480.jpeg 1x, ./images/port/portfolio/mobile/grow-480@2x.jpeg 2x"
             media="(max-width: 767px)">
     

@@ -1095,6 +1095,24 @@ summary {
   line-height: 1.187;
 }
 
+@media screen and (max-width: 767px) {
+  .team-foto {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-foto {
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-foto {
+    width: 270px;
+  }
+}
+
 .logo-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2197,6 +2215,24 @@ summary {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .photo {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .photo {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .photo {
+    width: 370px;
+  }
+}
+
 .thumb {
   position: relative;
   display: -webkit-box;
@@ -2252,7 +2288,7 @@ summary {
   font-size: 16px;
   line-height: 1.875;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -2326,6 +2362,12 @@ summary {
   }
   .foto-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .foto-item {
+    width: 450px;
   }
 }
 
