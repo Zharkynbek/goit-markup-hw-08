@@ -11,18 +11,21 @@
 @import "./components/footer";
 @import "./components/radio-btn";
 @import "./components/select-picters";
+@import "./components/modal";
+@import "./components/menu";
+@import "./components/select-picters-mobile";
 
 body {
   font-family: Roboto;
   margin: 0;
 }
 
-.skryt {
-  display: none;
+body.modal-open {
+  overflow: hidden;
 }
 
-.portfolio {
-  border-bottom: 1px solid #ececec;
+.skryt {
+  display: none;
 }
 
 .container {
@@ -39,15 +42,27 @@ body {
     width: 768px;
   }
 
-  @media screen and (min-width: 1140px) {
-    width: 1140px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
+}
+
+.portfolio {
+  border-bottom: 1px solid #ececec;
 }
 
 .portfolio-content {
   background-color: #ffffff;
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 footer {
