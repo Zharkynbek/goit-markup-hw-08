@@ -2082,7 +2082,7 @@ summary {
 
 .mobile-menu.is-open {
   z-index: 1;
-  top: 35%;
+  top: 22%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
