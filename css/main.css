@@ -2047,6 +2047,10 @@ summary {
   .menu-button {
     display: block;
   }
+  .menu-button:hover, .menu-button:focus {
+    outline: none;
+    color: #2196f3;
+  }
 }
 
 .menu-button .icon-cross {
@@ -2088,6 +2092,11 @@ summary {
           transform: translate(-50%, -50%);
   opacity: 1;
   visibility: visible;
+}
+
+.mobile-menu.is-open:hover, .mobile-menu.is-open:focus {
+  outline: none;
+  color: #2196f3;
 }
 
 .mobile-site-navi {

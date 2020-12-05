@@ -6,6 +6,11 @@
   background-color: transparent;
   @media screen and (max-width: 767px) {
     display: block;
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $logo-color;
+    }
   }
 }
 
@@ -44,6 +49,11 @@
   transform: translate(-50%, -50%);
   opacity: 1;
   visibility: visible;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $logo-color;
+  }
 }
 
 .mobile-site-navi {
