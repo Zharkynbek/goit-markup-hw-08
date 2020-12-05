@@ -2081,6 +2081,7 @@ summary {
 }
 
 .mobile-menu.is-open {
+  z-index: 1;
   top: 35%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
