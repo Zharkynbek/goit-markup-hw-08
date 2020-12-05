@@ -1,5 +1,7 @@
 .backdrop {
   position: fixed;
+  overflow-y: scroll;
+
   z-index: 1;
   top: 0;
   left: 0;
@@ -35,9 +37,9 @@
 
   @media screen and (max-width: 767px) {
     position: absolute;
-    top: 35%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     border-radius: 4px;
     background-color: #fff;
     width: calc(100% - 2 * 15px);

@@ -1,5 +1,6 @@
 .header {
   background-color: #fff;
+  position: relative;
 
   min-height: 60px;
   margin-bottom: 0px;
@@ -28,7 +29,7 @@
   }
 
   @media screen and (max-width: 1199px) and (min-width: 768px) {
-    display: flex;
+    text-align: center;
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
@@ -54,6 +55,34 @@
   } */
 }
 
+.logotip-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: #212121;
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+.web {
+  color: $logo-color;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -68,6 +97,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 .site-navi {
