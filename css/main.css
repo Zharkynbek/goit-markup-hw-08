@@ -416,6 +416,14 @@ summary {
           flex-grow: 1;
 }
 
+@media screen and (max-width: 767px) {
+  .main-nav {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+}
+
 .site-navi {
   display: none;
 }
@@ -1187,7 +1195,7 @@ summary {
   .logo-item:nth-child(2n) {
     margin-right: 0;
   }
-  .logo-item:nth-last-child(-n + 3) {
+  .logo-item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
 }
@@ -1512,7 +1520,7 @@ summary {
 
 .subscribe-btn::after {
   content: "";
-  background-image: url(/images/telegram.svg);
+  background-image: url(../../images/telegram.svg);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
