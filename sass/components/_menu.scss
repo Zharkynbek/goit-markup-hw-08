@@ -38,19 +38,22 @@
     visibility: hidden;
     min-width: 320px;
     max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
     background-color: #fff;
   }
 
   @media screen and (min-width: 768px) {
+    position: absolute;
     display: none;
   }
 }
 
 .mobile-menu.is-open {
-  z-index: 1;
-  top: 47%;
+  /*  z-index: 1;
+  top: 37%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   opacity: 1;
   visibility: visible;
   &:hover,
@@ -62,7 +65,6 @@
 
 /* .mobile-menu.is-open {
   background-color: #fff;
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -70,9 +72,9 @@
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
-}
+} */
 
-.mobile-menu.is-open {
+/* .mobile-menu.is-open {
   display: block;
   z-index: 2;
 } */
