@@ -424,6 +424,14 @@ summary {
   }
 }
 
+.main-nav:focus {
+  fill: #2196f3;
+}
+
+.main-nav:hover {
+  fill: #2196f3;
+}
+
 .site-navi {
   display: none;
 }
