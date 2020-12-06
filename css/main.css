@@ -1854,7 +1854,7 @@ summary {
   }
 } */
 .backdrop {
-  position: fixed;
+  position: absolute;
   overflow-y: scroll;
   z-index: 1;
   top: 0;
@@ -1905,7 +1905,8 @@ summary {
             transform: translate(-50%, 0);
     border-radius: 4px;
     background-color: #fff;
-    width: calc(100% - 2 * 15px);
+    /* 
+    width: calc(100% - 2 * 15px); */
     margin-right: 0;
     padding: 40px;
   }
@@ -1921,6 +1922,12 @@ summary {
             transform: translate(-50%, -50%);
     width: 528px;
     padding: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: calc(100% - 2 * 15px);
   }
 }
 
