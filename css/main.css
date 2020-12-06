@@ -1975,6 +1975,7 @@ summary {
   line-height: 1.666;
   letter-spacing: 0.01em;
   color: #757575;
+  text-align: left;
 }
 
 .form-field:hover > .modal-icons,
@@ -2025,6 +2026,7 @@ summary {
   letter-spacing: 0.01em;
   margin-bottom: 20px;
   color: #757575;
+  text-align: left;
 }
 
 .form-comment .form-box-text {
