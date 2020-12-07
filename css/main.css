@@ -997,7 +997,7 @@ summary {
 
 @media screen and (max-width: 768px) {
   .quality-text {
-    padding: 30px;
+    text-align: left;
   }
 }
 
