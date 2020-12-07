@@ -1908,7 +1908,7 @@ summary {
 @media screen and (max-width: 767px) {
   .modal {
     position: absolute;
-    top: 0;
+    top: 17%;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
@@ -1926,7 +1926,7 @@ summary {
     position: absolute;
     background-color: #fff;
     left: 50%;
-    top: 40%;
+    top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 528px;
